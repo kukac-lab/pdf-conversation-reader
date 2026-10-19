@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'uk.colinkuka.pdfvoice'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'uk.colinkuka.pdfvoice'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+    testImplementation 'junit:junit:4.13.2'
+}
